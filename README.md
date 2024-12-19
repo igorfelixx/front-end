@@ -29,21 +29,21 @@ git clone https://github.com/igorfelixx/front-end.git
 
 2. Install dependencies:
 ```bash
-npm install
+pnpm install
 ```
 
 3. Start the development server:
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 4. Open your browser and visit `http://localhost:xxxx`
 
 ## 📝 Available Scripts
 
-- `npm run dev` - Starts the development server
-- `npm run build` - Creates a production build
-- `npm run preview` - Previews the production build locally
+- `pnpm run dev` - Starts the development server
+- `pnpm run build` - Creates a production build
+- `pnpm run preview` - Previews the production build locally
 
 ## 🚀🚀🚀 The Project
 ![Authentication Page](./src/assets/imagesProject/authPage.png)
