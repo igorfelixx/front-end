@@ -53,6 +53,11 @@ const LoginPage = () => {
     navigate("/");
   };
 
+  const redirecionarParaGitHub = () => {
+    const url = "https://github.com/igorfelixx/front-end.git";
+    window.open(url, "_blank")
+};
+
   return (
     <StyledContainer direction="column" justifyContent="center">
       <Button
@@ -106,6 +111,9 @@ const LoginPage = () => {
           </Box>
         </StyledCard>
       )}
+      <Button onClick={redirecionarParaGitHub}>
+        Repositório no gitHub
+      </Button>
     </StyledContainer>
   );
 };

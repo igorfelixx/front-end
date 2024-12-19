@@ -115,13 +115,13 @@ const Sidebar: FC<SidebarProps> = ({
                 }}
               >
                 <ListItemAvatar>
-                  <Avatar sx={{ bgcolor: "#8bc34a" }}>
+                  <Avatar src="/dgtLogo.svg" sx={{ bgcolor: "#25F4EE" }}>
                     {item.caller[0].toUpperCase()}
                   </Avatar>
                 </ListItemAvatar>
                 <ListItemText
                   sx={{
-                    color: mode === "dark" ? "#FFFFFF" : "#000000", // Define a cor do texto conforme o tema
+                    color: mode === "dark" ? "#FFFFFF" : "#000000", 
                     fontWeight: "bolder",
                   }}
                   primary={
