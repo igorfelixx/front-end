@@ -31,13 +31,13 @@ const CallDetails: FC<CallDetailsProps> = ({ selectedCall, onEndCall }) => {
         <strong>Call ID:</strong> {selectedCall.callId}
       </Typography>
       <Typography>
-        <strong>Media:</strong> {selectedCall.media}
+        <strong>Mídia:</strong> {selectedCall.media}
       </Typography>
       <Typography>
-        <strong>Service:</strong> {selectedCall.service}
+        <strong>Serviço:</strong> {selectedCall.service}
       </Typography>
       <Typography>
-        <strong>Start Date:</strong> {selectedCall.startDate}
+        <strong>Data inicial:</strong> {selectedCall.startDate}
       </Typography>
 
       <Button

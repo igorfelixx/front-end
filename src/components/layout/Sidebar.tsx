@@ -109,9 +109,9 @@ const Sidebar: FC<SidebarProps> = ({
                   mb: 1,
                   backgroundColor:
                     selectedCallId === item.callId
-                      ? "#64b5f6"
+                      ? mode === "dark" ? "#0d47a1" : "#64b5f6"
                       : "transparent",
-                  boxShadow: `3px 3px 2px #64b5f6`,
+                  border: 1,
                 }}
               >
                 <ListItemAvatar>
