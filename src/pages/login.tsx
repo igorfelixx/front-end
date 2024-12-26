@@ -43,20 +43,33 @@ const LoginPage = () => {
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
+<<<<<<< HEAD
     const timer = setTimeout(() => setLoading(false), 500); 
+=======
+    const timer = setTimeout(() => setLoading(false), 500);
+>>>>>>> 87c1f38 (:test_tube: test: Criando novos teste)
     return () => clearTimeout(timer);
   }, []);
 
   const handleSubmit = () => {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 87c1f38 (:test_tube: test: Criando novos teste)
     handleSave();
     navigate("/");
   };
 
   const redirecionarParaGitHub = () => {
+<<<<<<< HEAD
     const url = "https://github.com/igorfelixx/front-end.git";
     window.open(url, "_blank")
 };
+=======
+    const url = "https://github.com/igorfelixx/front-end";
+    window.open(url, "_blank");
+  };
+>>>>>>> 87c1f38 (:test_tube: test: Criando novos teste)
 
   return (
     <StyledContainer direction="column" justifyContent="center">
@@ -70,7 +83,16 @@ const LoginPage = () => {
 
       {loading ? (
         <StyledCard>
+<<<<<<< HEAD
           <Skeleton variant="text" height={50} width="60%" sx={{ margin: "0 auto" }} />
+=======
+          <Skeleton
+            variant="text"
+            height={50}
+            width="60%"
+            sx={{ margin: "0 auto" }}
+          />
+>>>>>>> 87c1f38 (:test_tube: test: Criando novos teste)
           <Skeleton variant="rectangular" height={56} sx={{ mb: 2 }} />
           <Skeleton variant="rectangular" height={56} sx={{ mb: 2 }} />
           <Skeleton variant="rectangular" height={40} />
@@ -111,9 +133,13 @@ const LoginPage = () => {
           </Box>
         </StyledCard>
       )}
+<<<<<<< HEAD
       <Button onClick={redirecionarParaGitHub}>
         Repositório no gitHub
       </Button>
+=======
+      <Button onClick={redirecionarParaGitHub}>Repositório no gitHub</Button>
+>>>>>>> 87c1f38 (:test_tube: test: Criando novos teste)
     </StyledContainer>
   );
 };

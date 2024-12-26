@@ -9,4 +9,8 @@ export const useThemeContext = () => {
   }
 
   return context;
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> 87c1f38 (:test_tube: test: Criando novos teste)

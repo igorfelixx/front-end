@@ -11,14 +11,28 @@ const PageTransition = () => {
 
   useLayoutEffect(() => {
     setIsTransitioning(true);
+<<<<<<< HEAD
     const timer = setTimeout(() => setIsTransitioning(false), 3000);
     return () => clearTimeout(timer);
+=======
+    const timer = setTimeout(() => {
+      setIsTransitioning(false);
+    }, 3000);
+
+    return () => {
+      clearTimeout(timer);
+    };
+>>>>>>> 87c1f38 (:test_tube: test: Criando novos teste)
   }, [location]);
 
   return (
     <>
       <AnimatePresence mode="wait">
+<<<<<<< HEAD
         {isTransitioning && (
+=======
+        {isTransitioning === true ? (
+>>>>>>> 87c1f38 (:test_tube: test: Criando novos teste)
           <Box
             component={motion.div}
             initial={{ opacity: 1 }}
@@ -31,11 +45,19 @@ const PageTransition = () => {
               left: 0,
               width: "100%",
               height: "100vh",
+<<<<<<< HEAD
               backgroundColor: theme =>
                 `${
                   theme.palette.mode === "dark"
                     ? theme.palette.background.paper
                     : 'white'
+=======
+              backgroundColor: (theme) =>
+                `${
+                  theme.palette.mode === "dark"
+                    ? theme.palette.background.paper
+                    : "white"
+>>>>>>> 87c1f38 (:test_tube: test: Criando novos teste)
                 }`,
               display: "flex",
               alignItems: "center",
@@ -86,7 +108,11 @@ const PageTransition = () => {
               ))}
             </Stack>
           </Box>
+<<<<<<< HEAD
         )}
+=======
+        ): <></>}
+>>>>>>> 87c1f38 (:test_tube: test: Criando novos teste)
       </AnimatePresence>
       <Outlet />
       <style>
